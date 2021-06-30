@@ -1,0 +1,17 @@
+URL:
+1) https://www.ncdc.noaa.gov/isis/summary.htm?networkid=1
+2) https://www.ncdc.noaa.gov/isis/summary.htm?networkid=2
+3) https://www.ncdc.noaa.gov/isis/summary.htm?networkid=3
+
+For curves -> fields to select:
+Temperature Sensor -> Calibration Formula
+Datalogger -> Model
+
+
+For coeffs -> fields to select:
+Temperature Sensor -> C0 C1 C2 C3
+
+Be careful!
+1) Only a few stations have the coefficient c3. When you merge the 3 csv files, make sure that the columns are aligned correctly.
+2) delete null values (e.g. station 1041 NH Durham 2 N has them)
+3) remove all scientific notation
